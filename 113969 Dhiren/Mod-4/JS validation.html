@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+        
+        <pre>
+            <label for="">UserName</label>
+            <input type="text" required placeholder="Enter Username" autofocus id="uname"> 
+            <label for="">Password</label>
+            <input type="password" required placeholder="Enter Password" id="pwd">
+            <!-- <input type="submit" value="Register Me" style="display:block ; width: 200px; margin: auto;padding: 5px 0;border-radius: 20px;" > -->
+            <input type="checkbox" onclick="showPassword()" id="checkbox">Show password
+            <input type="submit" onclick="validate(event)">validate</button>
+        </pre>
+        </fieldset>
+        <script src="./validation.js"></script>
+    
+</body>
+</html>

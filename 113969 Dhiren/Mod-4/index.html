@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Form Elements</title>
+    <style>
+        input:valid{
+            border-left: 5px solid green;
+        }
+        input:invalid{
+            border-left: 5px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+        
+        <pre>
+            <label for="">UserName</label>
+            <input type="text" required placeholder="Enter Username" autofocus>
+            <label for="">Password</label>
+            <input type="password" required>
+            <label for="">city</label>
+            <select name="city" required>
+                <option disabled selected>Select City</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Banglore">Banglore</option>
+            </select>
+
+            <label for="">State</label>
+            <input list="state" name="state" required>
+            <datalist id="state" name="state">
+                <option value="delhi">delhi</option>
+                <option value="haryana">haryana</option>
+                <option value="maharashtra">maharashtra</option>
+            </datalist>
+            <label for="">Mobile</label>
+            <input type="text" required pattern="^[7-9][0-9]{9}" title="Enter only valid number">
+
+            <label for="">DOB</label>
+            <input type="date" required>
+
+            <label for="">TOB</label>
+            <input type="time" required>
+
+            <label for="">Upload Image</label>
+            <input type="file" required>
+
+            <input type="submit" value="Register Me" style="display:block ; width: 500px; margin: auto;padding: 10px 0;border-radius: 50px;" >
+        </pre>
+        </fieldset>
+
+         
+    </form>
+    
+</body>
+</html>

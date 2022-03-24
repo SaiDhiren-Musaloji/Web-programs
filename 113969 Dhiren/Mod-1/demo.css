@@ -1,0 +1,10 @@
+h1 {
+    color : whitesmoke !important;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+p {
+    color : blueviolet;
+    text-align: justify; 
+    font-size: 24px;
+}
